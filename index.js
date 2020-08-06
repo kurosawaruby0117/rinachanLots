@@ -3,20 +3,43 @@ const input=document.querySelector("input");
 const button=document.getElementsByClassName("submit")[0];
 const WhatYouGot=document.getElementsByClassName("value")[0];
 const list=document.getElementsByClassName("arrayList")[0];
+const anonymous=document.getElementsByClassName("anonymous")[0];
 
 let inputArray=[];
 
+function handleAnonymous(event){
+    console.log(1);
+}
+function deleteToDo(event) {
+    const btn = event.target;
+    const li = btn.parentNode;
+    const cleanToDos = inputArray.filter(function(contents) {
+      return contents.id !== li.id;
+    });
+    inputArray = cleanToDos;
+   
+  }
+
+function handleCheckButton(){
+    checking=anonymous.checked;
+    console.log(checking);
+    if(checking){
+        input.type="password";
+    }else{
+        input.type="text";
+    }
+}
 function handleInput(event){
-    event.preventDefault();
     
-    console.log(inputArray.length);
+    
+    event.preventDefault();
     const potato=document.createElement("li");
     const delBtn=document.createElement("button");
     delBtn.innerText="X";
+    delBtn.addEventListener("click",deleteToDo);
     const span=document.createElement("span");
     const newId=inputArray.length+1;
     span.innerText=input.value;
-    console.log(input.value);
     potato.appendChild(span);
     potato.appendChild(delBtn);
     list.appendChild(potato);
@@ -30,20 +53,18 @@ function handleInput(event){
 }
 
 function handleButton(event){
-    console.log(inputArray[0]);
     if(inputArray.length>1){
-        console.log("1");
-        const ranNumber=Math.floor(Math.random()*(inputArray.length-1+1))+1;
-        console.log(inputArray[ranNumber].text)
+        console.log(inputArray.length);
+        const ranNumber=Math.floor(Math.random()*(inputArray.length-1+1));
         WhatYouGot.innerText=inputArray[ranNumber].text;
+    }else{
+        alert("please insert more than 1.");
     }
 }
 
 if(button){
-
     button.addEventListener("click",handleButton);
 }
-if(inputForm){
-    inputForm.addEventListener("submit",handleInput);
-}
+inputForm.addEventListener("submit",handleInput);
+anonymous.addEventListener("click",handleCheckButton)
 
