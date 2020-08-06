@@ -4,7 +4,7 @@ const button=document.getElementsByClassName("submit")[0];
 const WhatYouGot=document.getElementsByClassName("value")[0];
 const list=document.getElementsByClassName("arrayList")[0];
 const anonymous=document.getElementsByClassName("anonymous")[0];
-
+const rinaPic=document.getElementsByClassName("rinaLocation")[0];
 let inputArray=[];
 checkBoolean=false;
 
@@ -14,6 +14,7 @@ function handleAnonymous(event){
 function deleteToDo(event) {
     const btn = event.target;
     const li = btn.parentNode;
+    list.removeChild(li);
     const cleanToDos = inputArray.filter(function(contents) {
       return contents.id !== li.id;
     });
