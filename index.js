@@ -6,6 +6,7 @@ const list=document.getElementsByClassName("arrayList")[0];
 const anonymous=document.getElementsByClassName("anonymous")[0];
 
 let inputArray=[];
+checkBoolean=false;
 
 function handleAnonymous(event){
     console.log(1);
@@ -25,13 +26,14 @@ function handleCheckButton(){
     console.log(checking);
     if(checking){
         input.type="password";
+        input.style="ime-mode:auto";
+        checkBoolean=true;
     }else{
         input.type="text";
+        checkBoolean=false;
     }
 }
 function handleInput(event){
-    
-    
     event.preventDefault();
     const potato=document.createElement("li");
     const delBtn=document.createElement("button");
@@ -39,7 +41,11 @@ function handleInput(event){
     delBtn.addEventListener("click",deleteToDo);
     const span=document.createElement("span");
     const newId=inputArray.length+1;
-    span.innerText=input.value;
+    if(checkBoolean){
+        span.innerText="*****";
+    }else{
+        span.innerText=input.value;
+    }
     potato.appendChild(span);
     potato.appendChild(delBtn);
     list.appendChild(potato);
