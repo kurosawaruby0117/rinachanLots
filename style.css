@@ -34,23 +34,23 @@ body{
 }
 
 .main__input{
-    margin-top: 7%;
+    margin-top: 3%;
     height: 7%;
     display: flex;
     align-items: center;   
     color:rgb(70, 45, 45);
-    background-color: red;
     text-shadow: -1px 0 whitesmoke, 0 1px whitesmoke, 1px 0 whitesmoke, 0 -1px whitesmoke;
 }
 
 .input__title{
-    padding-left: 13%;
+    padding-left: 14%;
     font-family: 'Lobster', cursive;
 }
 
 .arrayList{
+    margin-top: 1%;
     height: 50px;
-    margin-left: 260px;
+    margin-left: 15%;
 }
 
 .arrayList li{
@@ -61,8 +61,8 @@ body{
 }
 
 .main__mix{
-    margin-top: 120px;
-    padding-left: 243px;
+    margin-top: 8%;
+    padding-left: 14%;
 }
 
 .rinaLocation{
