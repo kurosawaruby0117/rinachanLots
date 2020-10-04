@@ -1,77 +1,77 @@
 @import "./reset.css";
-html{
-    height: 100%;
-    width: 100%;
-    position: relative;
+html {
+  height: 100%;
+  width: 100%;
+  position: relative;
 }
-body{
-
-    background-image: url("https://i.idol.st/u/background/7zSYA7Background-VFOcMC.jpg");
-    background-repeat : no-repeat;
-    background-size : cover;
+body {
+  background-image: url("https://i.idol.st/u/background/7zSYA7Background-VFOcMC.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
 }
-.title{
-    height: 40%;
-    padding-top: 0%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-size: 70px;
-    font-family: 'Indie Flower', cursive;
-    color:gray;
-    text-shadow: -1px 0 skyblue, 0 1px skyblue, 1px 0 skyblue, 0 -1px skyblue;
-}
-
-.choose{
-    height: 18%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-family: 'Nanum Pen Script', cursive;
-    font-size: 100px;
-    color:gray;
-    text-shadow: -1px 0 whitesmoke, 0 1px whitesmoke, 1px 0 whitesmoke, 0 -1px whitesmoke;
+.title {
+  height: 30%;
+  padding-top: 1%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 50px;
+  font-family: "Indie Flower", cursive;
+  color: grey;
+  text-shadow: -1px 0 skyblue, 0 1px skyblue, 1px 0 skyblue, 0 -1px skyblue;
 }
 
-.main__input{
-    margin-top: 2%;
-    height: 7%;
-    display: flex;
-    align-items: center;
-    color:rgb(70, 45, 45);
-    text-shadow: -1px 0 whitesmoke, 0 1px whitesmoke, 1px 0 whitesmoke, 0 -1px whitesmoke;
+.choose {
+  height: 10%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: "Nanum Pen Script", cursive;
+  font-size: 70px;
+  color: gray;
+  text-shadow: -1px 0 whitesmoke, 0 1px whitesmoke, 1px 0 whitesmoke,
+    0 -1px whitesmoke;
 }
 
-.input__title{
-    padding-left: 14%;
-    font-family: 'Lobster', cursive;
+.main__input {
+  height: 1%;
+  display: flex;
+  align-items: center;
+  color: rgb(70, 45, 45);
+  text-shadow: -1px 0 whitesmoke, 0 1px whitesmoke, 1px 0 whitesmoke,
+    0 -1px whitesmoke;
 }
 
-.arrayList{
-    margin-top: 1%;
-    height: 50px;
-    margin-left: 15%;
+.input__title {
+  padding-left: 14%;
+  font-family: "Lobster", cursive;
 }
 
-.arrayList li{
-    color:black;
-    text-shadow: -1px 0 whitesmoke, 0 1px whitesmoke, 1px 0 whitesmoke, 0 -1px whitesmoke;
-    font-family: 'Indie Flower', cursive;
-    font-size: 25px;
+.arrayList {
+  margin-top: 1%;
+  height: 50px;
+  margin-left: 15%;
 }
 
-.main__mix{
-    margin-top: 8%;
-    padding-left: 14%;
+.arrayList li {
+  color: black;
+  text-shadow: -1px 0 whitesmoke, 0 1px whitesmoke, 1px 0 whitesmoke,
+    0 -1px whitesmoke;
+  font-family: "Indie Flower", cursive;
+  font-size: 25px;
 }
 
-.rinaLocation{
+.main__mix {
+  margin-top: 8%;
+  padding-left: 14%;
+}
 
-    height:500px;
-    width: 700px;
-    position: absolute;
-    background-size: cover;
-    bottom:0px;
-    right: 0;
-    background-image: url("https://i.idol.st/u/card/transparent/52SR-Tennoji-Rina-Say-Cheese-Dokipipo-Emotion-Cp5nGd.png");
+.rinaLocation {
+  height: 500px;
+  width: 700px;
+  position: absolute;
+  background-size: cover;
+  bottom: 0px;
+  right: 0;
+  background-image: url("https://i.idol.st/u/card/transparent/52SR-Tennoji-Rina-Say-Cheese-Dokipipo-Emotion-Cp5nGd.png");
 }
