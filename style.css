@@ -5,7 +5,7 @@ html{
     position: relative;
 }
 body{
-    
+
     background-image: url("https://i.idol.st/u/background/7zSYA7Background-VFOcMC.jpg");
     background-repeat : no-repeat;
     background-size : cover;
@@ -34,10 +34,10 @@ body{
 }
 
 .main__input{
-    margin-top: 3%;
+    margin-top: 2%;
     height: 7%;
     display: flex;
-    align-items: center;   
+    align-items: center;
     color:rgb(70, 45, 45);
     text-shadow: -1px 0 whitesmoke, 0 1px whitesmoke, 1px 0 whitesmoke, 0 -1px whitesmoke;
 }
@@ -66,7 +66,7 @@ body{
 }
 
 .rinaLocation{
-    
+
     height:500px;
     width: 700px;
     position: absolute;

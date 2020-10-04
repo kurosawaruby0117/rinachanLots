@@ -19,7 +19,7 @@ function deleteToDo(event) {
       return contents.id !== li.id;
     });
     inputArray = cleanToDos;
-   
+
   }
 
 function handleCheckButton(){
@@ -69,10 +69,7 @@ function handleButton(event){
     }
 }
 
-function handleWebSize(){
-    console.log('1');
-    window.resizeTo(1280,686);
-}
+
 
 if(button){
     button.addEventListener("click",handleButton);
