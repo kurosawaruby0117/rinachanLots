@@ -1,3 +1,4 @@
+
 const inputForm=document.querySelector(".input__contents");
 const input=document.querySelector("input");
 const button=document.getElementsByClassName("submit")[0];
@@ -5,9 +6,32 @@ const WhatYouGot=document.getElementsByClassName("value")[0];
 const list=document.getElementsByClassName("arrayList")[0];
 const anonymous=document.getElementsByClassName("anonymous")[0];
 const rinaPic=document.getElementsByClassName("rinaLocation")[0];
+const downloadButton=document.getElementsByClassName("download")[0];
+
 let inputArray=[];
 checkBoolean=false;
-
+function loadFileAsText(){
+   var fileReader=new FileReader();
+}
+function saveFile(){
+    if(inputArray.length<=0){
+        alert("please insert more than 1.");
+    }else{
+       var listOfArray=[];
+       for(var i=0;i<inputArray.length;i++){
+        console.log(inputArray[i].text)
+        listOfArray.push(inputArray[i].text);
+       }
+        var textDownload=document.createElement('a');
+       textDownload.href='data:attachment/text,'+encodeURI(listOfArray.join('\n'));
+       textDownload.target='_blank';
+       textDownload.download='lots.txt';
+       textDownload.click();
+       
+    }
+   
+    
+}
 function handleAnonymous(event){
     console.log(1);
 }
@@ -75,7 +99,9 @@ if(button){
     button.addEventListener("click",handleButton);
 }
 inputForm.addEventListener("submit",handleInput);
-anonymous.addEventListener("click",handleCheckButton)
+anonymous.addEventListener("click",handleCheckButton);
+
+downloadButton.addEventListener("click",saveFile)
 
 console.log(window.innerHeight,window.innerWidth);
 
